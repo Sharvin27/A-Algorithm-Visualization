@@ -43,7 +43,7 @@ class Spot:
         return self.color == BLACK
 
     def is_start(self):
-        return self.color == PURPLE
+        return self.color == ORANGE
 
     def is_end(self):
         return self.color == TURQUOISE
@@ -52,7 +52,7 @@ class Spot:
         self.color = WHITE
 
     def make_start(self):
-        self.color = PURPLE
+        self.color = ORANGE
 
     def make_closed(self):
         self.color = RED
@@ -67,7 +67,7 @@ class Spot:
         self.color = TURQUOISE
 
     def make_path(self):
-        self.color = ORANGE
+        self.color = PURPLE
 
     def draw(self, win):
         pygame.draw.rect(win, self.color,(self.x, self.y, self.width, self.width))
